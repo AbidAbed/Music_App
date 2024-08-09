@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+h2,p{
+  direction: rtl;
+}
+
+body {
+  background-image: url(".././public/images/svgs/Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Optional: Align items vertically */
+  /* gap: 1vw; */
+  /* Add any other styles for the row */
+}
+
+.canvas-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 0.8vw;
+  gap: 4vw;
+}
+
+.canvas-header-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon{
+  width: 3vw;
+}
+
+.logo-container{
+  margin-left: 5vw;
+  position: relative;
+}
+
+.logo-icon{
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 9%;
+  margin-bottom: 1vw;
+}
+
+.canvas-title-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 9vw;
+}
+
+.canvas-title-text{
+  font-size: 1.3vw;
+  color: #8c6700;
+  font-weight: 400;
+}
+
+.canvas-title-sub-text{
+  font-size: 1.1vw;
+  margin-top: 0.1vw;
+  color: #94700f;
+  font-weight: 400;
+}
+
+
+@media(max-width : 1024px){
+  .canvas-title-text{
+    font-size: 1.6vw;
+    color: #8c6700;
+    font-weight: 400;
+  }
+  
+  .canvas-title-sub-text{
+    font-size: 1.4vw;
+    margin-top: 0.1vw;
+    color: #94700f;
+    font-weight: 400;
+  }
+}
